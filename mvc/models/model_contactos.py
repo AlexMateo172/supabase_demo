@@ -25,6 +25,17 @@ class ModelContactos:
      response = self.supabase.table("contactos").select("*").eq("id_contacto", id_contcto).execute()
      return response.data
 
+ def insertarContacto(self,nombre,email,telefono):
+     response = self.supabase.table("contactos").insert({"nombre": nombre, "email": email, "telefono": telefono}).execute()
+     return response.data
+
+ def borrarContacto(self,id_contacto:int):
+     response = self.supabase.table("contactos").delete().eq("id_contacto", id_contacto).execute()
+     return response.data
+
+ def actualizarContacto(self,id_contacto:int,nombre,email,telefono):
+     response = self.supabase.table("contactos").update({"nombre": nombre, "email": email, "telefono": telefono}).eq("id_contacto", id_contacto).execute()
+     return response.data
 
 
 if __name__ == "__main__":
