@@ -42,3 +42,6 @@ if __name__ == "__main__":
      model_contactos = ModelContactos()
      print(model_contactos.obtenerContactos())
      print(model_contactos.buscarContacto(15))
+     print(model_contactos.insertarContacto())
+     print(model_contactos.borrarContacto(15))
+     print(model_contactos.actualizarContacto())
