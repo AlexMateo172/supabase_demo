@@ -9,4 +9,3 @@ class contactos:
         datos = model_contactos.obtenerContactos()
         print(datos)
         return render.contactos(datos)
-    

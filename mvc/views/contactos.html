@@ -1,8 +1,7 @@
 $def with(datos)
 <h1>Contactos</h1>
 
-$:datos
-
+<a href="/insertar_contacto">Insertar Contacto</a>
 <table>
     <thead>
         <tr>
@@ -13,11 +12,12 @@ $:datos
         </tr>
     </thead>
     <tbody>
-        <tr >
-            <td>1</td>
-            <td>Dejah</td>
-            <td>dejah@email.com</td>
-            <td>11111111</td>
+        $for registro in datos:
+        <tr>
+            <td>$registro['id_contacto']</td>
+            <td>$registro['nombre']</td>
+            <td>$registro['email']</td>
+            <td>$registro['telefono']</td>
         </tr>
     </tbody>    
 </table>
