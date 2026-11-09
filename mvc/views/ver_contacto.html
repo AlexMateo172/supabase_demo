@@ -1,0 +1,19 @@
+$def with(contacto)
+
+$contacto
+<br>
+<forn name="contacto" method="GET" action="/contactos">
+    <label for="id_contactos">ID</label>
+    <input type="text" name="id_contacto" id="id_contacto" value="$contacto[0]['id_contacto']" readonly><br>
+
+    <label for="nombre">Nombre</label>
+    <input type="text" name="nombre" id="nombre" value="$contacto[0]['nombre']" readonly><br>
+
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" value="$contacto[0]['email']" readonly><br>
+
+    <label for="telefono">Teléfono</label>
+    <input type="tel" name="telefono" id="telefono" value="$contacto[0]['telefono']" readonly><br>
+
+    <button onclick="location.href='/contactos';">Regresar</button>
+</forn>

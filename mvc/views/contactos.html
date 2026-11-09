@@ -9,6 +9,9 @@ $def with(datos)
             <th>Nombre</th>
             <th>Correo</th>
             <th>Teléfono</th>
+            <th>Ver</th>
+            <th>Actualizar</th>
+            <th>Borrar</th>
         </tr>
     </thead>
     <tbody>
@@ -18,6 +21,9 @@ $def with(datos)
             <td>$registro['nombre']</td>
             <td>$registro['email']</td>
             <td>$registro['telefono']</td>
+            <td><a href="/ver_contacto/$registro['id_contacto']">Ver</a></td>
+            <td><a href="/actualizar_contacto/$registro['id_contacto']">Actualizar</a></td>
+            <td><a href="/borrar_contacto/$registro['id_contacto']">Borrar</a></td>
         </tr>
     </tbody>    
 </table>
