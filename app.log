@@ -1,0 +1,11 @@
+2026-11-13 04:04:14 [INFO] httpx: HTTP Request: GET https://kdlltqszcnvnixcwpmgp.supabase.co/rest/v1/contactos?select=%2A "HTTP/2 200 OK"
+2026-11-13 04:04:32 [INFO] httpx: HTTP Request: GET https://kdlltqszcnvnixcwpmgp.supabase.co/rest/v1/contactos?select=%2A&id_contacto=eq.1 "HTTP/2 200 OK"
+2026-11-13 04:04:34 [INFO] httpx: HTTP Request: GET https://kdlltqszcnvnixcwpmgp.supabase.co/rest/v1/contactos?select=%2A "HTTP/2 200 OK"
+2026-11-13 04:04:35 [INFO] httpx: HTTP Request: GET https://kdlltqszcnvnixcwpmgp.supabase.co/rest/v1/contactos?select=%2A&id_contacto=eq.1 "HTTP/2 200 OK"
+2026-11-13 04:04:39 [INFO] httpx: HTTP Request: GET https://kdlltqszcnvnixcwpmgp.supabase.co/rest/v1/contactos?select=%2A "HTTP/2 200 OK"
+2026-11-13 04:04:44 [INFO] httpx: HTTP Request: GET https://kdlltqszcnvnixcwpmgp.supabase.co/rest/v1/contactos?select=%2A&id_contacto=eq.1 "HTTP/2 200 OK"
+2026-11-13 04:04:50 [INFO] httpx: HTTP Request: GET https://kdlltqszcnvnixcwpmgp.supabase.co/rest/v1/contactos?select=%2A "HTTP/2 200 OK"
+2026-11-13 04:06:08 [INFO] httpx: HTTP Request: GET https://kdlltqszcnvnixcwpmgp.supabase.co/rest/v1/contactos?select=%2A&id_contacto=eq.1 "HTTP/2 200 OK"
+2026-11-13 04:06:13 [INFO] httpx: HTTP Request: GET https://kdlltqszcnvnixcwpmgp.supabase.co/rest/v1/contactos?select=%2A&id_contacto=eq.null "HTTP/2 400 Bad Request"
+2026-11-13 04:06:13 [ERROR] mvc.models.model_contactos: ERROR 102: {'message': 'invalid input syntax for type bigint: "null"', 'code': '22P02', 'hint': None, 'details': None}
+2026-11-13 04:06:15 [INFO] httpx: HTTP Request: GET https://kdlltqszcnvnixcwpmgp.supabase.co/rest/v1/contactos?select=%2A "HTTP/2 200 OK"
